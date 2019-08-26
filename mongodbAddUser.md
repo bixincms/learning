@@ -7,13 +7,18 @@ db.createUser(
     pwd: "欲创建的超级管理账号的密码",
     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
-)
-`验证是否成功 ， 成功返回 1`
-db.auth("bixinseoAdmin","s2CKFngFPq4NuA6D")
-`退出修改配置文件`
+)  
+
+`验证是否成功 ， 成功返回 1`  
+
+db.auth("bixinseoAdmin","s2CKFngFPq4NuA6D")  
+
+`退出修改配置文件`  
+
 disabled
 security:
-authorization: enabled
+authorization: enabled  
+
 `重启mongodb`
 use admin
 db.auth("欲创建的超级管理账号","欲创建的超级管理账号的密码")
